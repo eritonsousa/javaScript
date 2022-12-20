@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 100vh;
+            background-color: black;
+            padding: 0;
+            margin: 0;
+            box-sizing: content-box;
+        }
+
+        .loading {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 10px solid white;
+            border-top: 10px solid black;
+            animation: rodando 1s linear infinite;
+        }
+
+        @keyframes rodando {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading"></div>    
+</body>
+</html>

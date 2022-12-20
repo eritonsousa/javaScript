@@ -1,0 +1,36 @@
+* {
+    font: normal 16pt Arial;
+}
+
+body {
+    background: rgb(69, 164, 228);
+}
+
+header {
+    
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+section {
+    margin: auto;
+    background: white;
+    width: 600px;
+    height: 450px;
+    border-radius: 15px 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.705);
+    
+}
+
+div {
+    padding: 8px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}

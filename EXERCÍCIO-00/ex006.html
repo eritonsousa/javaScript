@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-06</title>
+</head>
+<body>
+    <h1 class="titulo">Iniciando os Estudos</h1>
+    <p><strong>Estou aprendendo</strong></p>
+    <p><strong>Irei conseguir</strong></p>
+    <p>Vote em mim</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+
+        var tt = window.document.getElementsByClassName("titulo")[0]
+
+        var d = window.document.getElementById("msg")
+
+        var corpo = window.document.body
+
+        var p1 = window.document.getElementsByTagName("p")[0]
+        window.document.write(p1.innerText + " <strong>CODIGO EXECUTADO</strong><br> ") //Obs: Com o (innerText) pode ser que quando o texto tiver algo em negrito (<strong></strong>) não irá executar no negrito, somente o texto normal (sem o negrito).
+
+        var p1 = window.document.getElementsByTagName("p")[1]
+        window.document.write(p1.innerHTML + " <strong>CODIGO EXECUTADO</strong> ") // Obs: Na observação acima, o negrito não viria por causa do (innerText). Mas nesse exemplo ultilizei o (innerHTML), e com ele, o codigo é executado de acordo com oq está no documento (escrito). QUALQUER DÚVIDA, EXECUTA O CÓDIGO
+        p1.style.color = "white"
+        p1.style.backgroundColor = "red"
+        corpo.style.backgroundColor = "darkgrey"
+        d.style.backgroundColor = "white"
+        d.innerText = "Estou aguardando..."
+        tt.style.backgroundColor = "black"
+        tt.style.color ="white"
+    </script>
+</body>
+</html>

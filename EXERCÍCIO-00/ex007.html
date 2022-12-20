@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-07</title>
+</head>
+<body>
+    <h1>Iniciando os Estudos</h1>
+    <p><strong>Estou aprendendo</strong></p>
+    <p><strong>Irei conseguir</strong></p>
+    <p>Vote em mim</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+
+        var p1 = window.document.getElementsByTagName("p")[0]
+        window.document.write(p1.innerText + " <strong>CODIGO EXECUTADO</strong><br> ") 
+
+        var d = window.document.querySelector("div#msg")
+        d.style.background = "red"
+    </script>   
+</body>
+</html>

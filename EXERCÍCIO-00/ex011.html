@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-11</title>
+</head>
+<body>
+    <h1>Soma de Valores</h1>
+    <input type="number" name="num1" id="num1"> +
+    <input type="number" name="num2" id="num2">
+    <input type="button" value="Somar" onclick="somar()">
+<div id="res">
+    RESULTADO
+</div>
+        <script>
+            function somar(){
+                var c1 = window.document.getElementById('num1')
+                var c2 = window.document.getElementById('num2')
+                var n1 = Number(c1.value)
+                var n2 = Number(c2.value)
+                var s = n1 + n2
+                var res = window.document.getElementById('res')
+                res.innerHTML = `RESULTADO: ${s}`
+            }   
+        </script>
+</body>
+</html>

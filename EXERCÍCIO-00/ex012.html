@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-12</title>
+</head>
+<body>
+    <h1>Digite seu País</h1>
+    <input type="text" name="pais1" id="pais1">
+    <input type="button" value="PRONTO" onclick="saber()">
+<div id="res">RESULTADO:</div>
+<script>
+    function saber() {
+        var pais = window.document.getElementById('pais1').value
+        var res = window.document.getElementById('res')
+        res.innerHTML = `<p>O seu país é ${pais}</p>`
+
+        if (pais == 'Brasil'){
+            res.innerHTML += '<p>Você é brasileiro</p>'
+        }
+        else {
+            res.innerHTML += '<p>Você é estrangeiro</p>'
+        }
+        
+        
+    }
+</script>
+</body>
+</html>
